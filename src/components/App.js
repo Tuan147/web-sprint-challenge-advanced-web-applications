@@ -21,7 +21,7 @@ const App = () => {
         <Route exact path='/login'>
           <Login/>
         </Route>
-        <PrivateRoute path='/view' setArticles={setArticles} >
+        <PrivateRoute path='/view' >
           <View />
         </PrivateRoute>  
         <PrivateRoute path='/logout'>

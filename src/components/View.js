@@ -27,10 +27,9 @@ const View = (props) => {
     };
 
     const handleEdit = (article) => {
-        axiosWithAuth().put(`http://localhost:5000/api/articles/${id}`, article)
+        axiosWithAuth().put(`http://localhost:5000/api/articles/:id`, article)
             .then(res => {
                 setArticles(res.data)
-                
             })
             .catch(err => console.log(err))
     };
